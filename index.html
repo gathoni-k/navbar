@@ -29,5 +29,13 @@
         </div>
       </ul>
     </nav>
+    <script>
+      const closeBtn = document.getElementsByClassName('close-btn')[0]
+      const menuList = document.getElementsByClassName('menu-list')[0]
+      closeBtn.onclick = () => {
+                menuList.classList.add('hide')
+      }
+      console.log(closeBtn)
+    </script>
   </body>
 </html>

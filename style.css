@@ -31,10 +31,12 @@ nav {
   color: #ffffff;
   font-weight: 400;
 }
-
+.close-btn {
+  display: none;
+}
 @media screen and (max-width: 886px) {
   nav {
-    padding: 5px 20px;
+    padding: 10px 20px;
   }
   .menu-list {
     position: fixed;
@@ -48,8 +50,14 @@ nav {
     align-items: center;
     margin: 0;
     padding: 10px 0;
+    transition: all 1s ease;
   }
-
+  .hide {
+    left: -100%;
+  }
+  .show {
+    left: 0;
+  }
   .menu-list li {
     margin-left: 0px;
     margin-bottom: 20px;
@@ -64,5 +72,6 @@ nav {
   }
   .close-btn:hover{
     background-color: #000;
+    display: inline;
   }
 }
