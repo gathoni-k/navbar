@@ -74,4 +74,9 @@ nav {
     background-color: #000;
     display: inline;
   }
+.menu-btn{
+    color: #ffffff;
+    font-size: 32px;
+    transition: all 0.5s ease;
+  }
 }
