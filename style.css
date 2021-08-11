@@ -3,8 +3,8 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
-nav{
-  max-width: 1260px;
+
+nav {
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -32,3 +32,25 @@ nav{
   font-weight: 400;
 }
 
+@media screen and (max-width: 886px) {
+  nav {
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  .menu-list li {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+}
