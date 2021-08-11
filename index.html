@@ -35,10 +35,13 @@
     <script>
       const closeBtn = document.getElementsByClassName('close-btn')[0]
       const menuList = document.getElementsByClassName('menu-list')[0]
+      const menuBtn = document.getElementsByClassName('menu-btn')[0]
       closeBtn.onclick = () => {
-                menuList.classList.add('hide')
+        menuList.classList.remove('show')
       }
-      console.log(closeBtn)
+      menuBtn.onclick = () => {
+        menuList.classList.add('show')
+      }
     </script>
   </body>
 </html>
