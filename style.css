@@ -11,6 +11,7 @@ nav {
   align-items: center;
   padding: 0 20px;
   background-color: #C1B8C8;
+  height: 50px;
 }
 .logo a {
   text-decoration: none;
@@ -34,15 +35,16 @@ nav {
 .close-btn {
   display: none;
 }
+.menu-btn {
+  display: none;
+}
 @media screen and (max-width: 886px) {
-  nav {
-    padding: 10px 20px;
-  }
+ 
   .menu-list {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 300px;
+    left: -100%;
+    width: 100%;
     height: 100vh;
     background-color: #d4c7dd;
     display: flex;
@@ -51,9 +53,6 @@ nav {
     margin: 0;
     padding: 10px 0;
     transition: all 1s ease;
-  }
-  .hide {
-    left: -100%;
   }
   .show {
     left: 0;
@@ -64,19 +63,23 @@ nav {
   }
   .close-btn {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 32px;
     position: absolute;
     right: 0;
     top: 0;
-    transition: all 1s ease;
-  }
-  .close-btn:hover{
-    background-color: #000;
+    transition: all 0.5s ease;
     display: inline;
   }
 .menu-btn{
     color: #ffffff;
     font-size: 32px;
     transition: all 0.5s ease;
+    display: inline;
+  }
+  .close-btn:hover, .menu-btn:hover {
+    transform: scale(0.9);
+  }
+  .close-btn:active, .menu-btn:active {
+    transform: scale(0.75);
   }
 }
